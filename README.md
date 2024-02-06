@@ -1,4 +1,4 @@
-# Snake Game in C++ with Raylib
+# Snake Game 🐍 in C++ with Raylib
 
 ## Overview
 This repository contains the source code for a Snake Game implemented in C++ using the Raylib library.
