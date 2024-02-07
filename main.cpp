@@ -6,7 +6,7 @@ using namespace std;
 Color green = {173,204,96,255};
 Color darkGreen = {43,51,24,255};
 
-int cellSize = 30;
+int cellSize = 28;
 int cellCount = 25;
 int offSet = 75;
 // to keep track of time when snake was updated last
@@ -200,7 +200,7 @@ int main(){
         DrawRectangleLinesEx(Rectangle{(float)offSet-5,(float)offSet-5,(float)cellSize*cellCount+10
                                         ,(float)cellSize*cellCount+10},5,darkGreen);
         DrawText("Snake Game",offSet-5,20,40,darkGreen);
-        DrawText(TextFormat("%i",game.score),offSet-5,offSet+cellSize*cellCount+10,40,darkGreen);
+        DrawText(TextFormat("%i",game.score),640,20,40,darkGreen);
         game.Draw();
 
         EndDrawing();
@@ -209,3 +209,4 @@ int main(){
     CloseWindow();
     return 0;
 }
+// posY: offSet+cellSize*cellCount+10
